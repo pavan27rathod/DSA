@@ -4,7 +4,7 @@ using namespace std;
 
 int uniqueElement(int arr[], int size){    //This method is not recommended as it is taking O(n^2) time complexity. use XOR method
     for(int i=0;i<size;i++){  
-        int count=0;      
+        int count=0;      //count must initialize to its base value when we progress further for another element
         for(int j=0;j<size;j++){            
             if(arr[i]==arr[j])
             count++;
