@@ -27,6 +27,25 @@ void sort012(int arr[], int size){
         arr[i]=2;
 }
 
+void sortColors(int nums[], int size){
+    int i=0;
+    int left=0;
+    int right=size-1;
+    while(i<=right){
+        if(nums[i]==0){
+            swap(nums[i], nums[left]);
+            i++;
+            left++;
+        }
+        else if(nums[i]==2){
+            swap(nums[i], nums[right]);
+            right--;
+        }
+        else if(nums[i]==1)
+            i++;
+    }
+}
+
 void printArray(int arr[], int size){
     for(int i=0;i<size;i++)
     cout<<arr[i]<<" ";
@@ -35,6 +54,7 @@ void printArray(int arr[], int size){
 int main(){
     int arr[]={2,0,2,1,1,0};
     int size=sizeof(arr)/sizeof(arr[0]);
-    sort012(arr,size);
+    // sort012(arr,size);
+    sortColors(arr,size);
     printArray(arr,size);
 }
