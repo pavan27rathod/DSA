@@ -2,3 +2,8 @@ Problems solved according to respective techniques:
 
 1. Two Pointers:
     1. Sort 0 & 1 in array -> Running from both ends of an array
+    2. Move all negative elements to one side of array -> Slow pointer, i iterating through array & j moving slowly if arr[i]<0
+
+
+2. Modulus Method:
+    1. Rotate array by k steps 
