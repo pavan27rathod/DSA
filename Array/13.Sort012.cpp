@@ -46,6 +46,25 @@ void sortColors(int nums[], int size){
     }
 }
 
+void sortColors(int arr[], int size){
+    int index=0;
+    int left=0;
+    int right=size-1;
+    while(index<=right){
+        if(arr[index]==0){
+            swap(arr[index], arr[left]);
+            index++;
+            left++;
+        }
+        else if(arr[index]==2){
+            swap(arr[index], arr[right]);
+            right--;
+        }
+        else if(arr[index]==1)
+            index++;
+    }
+}
+
 void printArray(int arr[], int size){
     for(int i=0;i<size;i++)
     cout<<arr[i]<<" ";
