@@ -2,16 +2,29 @@
 #include<string.h>
 using namespace std;
 
+// bool palindromeString(char ch[], int size){
+//     int i=0, j=size-1;
+//     while(i<=j){
+//         if(ch[i]!=ch[j]) return false;
+//         if(ch[i]==ch[j]){
+//             i++;
+//             j--;
+//         }
+//     }
+//    return true;
+// }
+
 bool palindromeString(char ch[], int size){
-    int i=0, j=size-1;
+    int i=0;
+    int j=size-1;
     while(i<=j){
-        if(ch[i]!=ch[j]) return false;
+        if(ch[i]!=ch[j])
+            return false;
         if(ch[i]==ch[j]){
             i++;
             j--;
         }
     }
-   return true;
 }
 
 int main(){
