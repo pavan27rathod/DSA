@@ -7,3 +7,28 @@ Problems solved according to respective techniques:
 
 2. Modulus Method:
     1. Rotate array by k steps 
+
+
+:
+
+Here's your updated post with symbols and headings:
+
+🚀 LeetCode 50 Days Badge 2024 🚀
+🎉 Today marks my 50th day of solving LeetCode problems this year! 🎉
+
+A few months ago, I started this journey to boost my coding skills. Every day has been a mix of challenges and small victories. Reaching this 50-day milestone makes me really happy and motivated. It’s like seeing the results of all the hard work!
+
+🚀 33/50 Day LeetCode Challenge 🚀
+🚀 Day 33 of DevJourney Season 2 🚀
+
+Today, I focused on recursion and tackled some basic array problems Using recursion techniques in my IDE:
+
+    Print Array in Straight & Reverse Order – To understand recursion better.
+    Search in Array – Applying recursion to find elements.
+    Find Maximum & Minimum in Array – Using recursion to get the results.
+    
+I also solved an easy-level LeetCode problem: Remove Duplicates from Sorted Array. Feeling great about the progress!
+
+Here’s to many more challenges and learning!
+
+#LeetCode #50DaysChallenge #DevJourney #Recursion #CodingLife #SoftwareDevelopment #TechJourney #DailyCoding #DeveloperLife #TechCommunity #CodingChallenges #ArrayProblems
