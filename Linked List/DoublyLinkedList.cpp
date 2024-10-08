@@ -170,13 +170,6 @@ int main(){
     Node* head=NULL;
     Node* tail=NULL;
 
-    // insertAtHead(head,tail,50);
-    // insertAtHead(head,tail,40);
-    // insertAtHead(head,tail,30);
-    // insertAtHead(head,tail,20);
-    // insertAtHead(head,tail,10);
-    // insertAtTail(head,tail,60);
-    // insertAtPosition(head,tail,35,4);
     cout<<"Before Deletion : "<<endl;
     print(head);
 
