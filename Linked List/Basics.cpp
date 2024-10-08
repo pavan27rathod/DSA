@@ -118,6 +118,7 @@ void print(Node* head) {
 }
 
 void deleteNode(Node* &head, Node* &tail, int position){
+    int len=findLength(head);
     //If the list is empty
     if(head==NULL){
         cout<<"Linked List is Empty, can't delete"<<endl;
@@ -125,18 +126,16 @@ void deleteNode(Node* &head, Node* &tail, int position){
     }
 
     //If the list contains only single element
-    if(head==tail){
+    else if(head==tail){
         Node* temp=head;
         delete temp;
         head=NULL;
         tail=NULL;
         return;
-    }
-
-    int len=findLength(head);
+    }   
 
     //Delete from head
-    if(position==1){
+    else if(position==1){
         //Create temp pointer pointing to head -> Make next node as head -> make temp->next=null -> delete temp node
         Node* temp=head;
         head=head->next; // OR head=temp->next, both are equally correct
@@ -146,7 +145,7 @@ void deleteNode(Node* &head, Node* &tail, int position){
     }
 
     //Delete from Tail 
-    if(position==len){
+    else if(position==len){
         //Make a temporary pointer prev & traverse till second last node -> point that second last node to null -> delete tail -> Make the second last node as tail
         Node* prev=head;
         while(prev->next != tail){
@@ -160,17 +159,20 @@ void deleteNode(Node* &head, Node* &tail, int position){
     }
 
     //Delete from specific position
-    Node* prev=NULL;
-    Node* curr=head;
-    while(position !=1){
-        position--;
-        prev=curr;
-        curr=curr->next;
-    }
+    else{
+        Node* prev=NULL;
+        Node* curr=head;
+        while(position !=1){
+            position--;
+            prev=curr;
+            curr=curr->next;
+        }
 
-    prev->next=curr->next;
-    curr->next=NULL;
-    delete curr;
+        prev->next=curr->next;
+        curr->next=NULL;
+        delete curr;
+        return;
+    }
 
 }
 
